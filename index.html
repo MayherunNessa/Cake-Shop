@@ -5,6 +5,7 @@
     <title>Cake Shop</title>
     <!-- Custom CSS links -->
      <link rel="stylesheet" href="style.css">
+
     <!-- Custom Google Font links -->
     <!-- Custom Icon Links -->
 </head>
@@ -20,13 +21,77 @@
                 
             </ul>
 
-            <button>Cart</button>
+            <button id="show-hide-cart">Cart</button>
         </nav>
     </header>
     
     <!-- Main Body -->
     <main>
+        <!-- Product list section -->
+        <div class="product-list">
 
+            <div class="product-card">
+                <h3>Cake Name</h3>
+                <img src="" alt="product-img">
+                <p>price</p>
+                <button id="add-to-cart">Add to cart +</button>
+            </div>
+            
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart">
+            <!-- Cart items section -->
+            <div class="cart-items">
+
+                <div class="item-card">
+                    <img src="" alt="item-img">
+                    <div class="col">
+                        <p>Item name</p>
+                        <p>Unit price</p>
+                        <div class="quantity">
+                            <button>-</button> <p>0</p> <button>+</button>
+                        </div>
+                    </div>
+
+                    <div class="col"></div>
+                </div>
+
+            </div>
+
+            <!-- Checkout Section -->
+            <div class="chekout">
+                <div class="row">
+                    <input id="promo-code" type="text" placeholder="Discount code">
+                    <button id="promo-submit">Submit</button>
+                </div>
+                <div class="row">
+                    <div class="col-1">Subtotal</div>
+                    <div class="col-2">112$</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">Discount</div>
+                    <div class="col-2">25$</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">Delivary</div>
+                    <div class="col-2">30$</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1">Total</div>
+                    <div class="col-2">167$</div>
+                </div>
+
+
+                
+                <div class="row">
+                    <button>Checkout</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
