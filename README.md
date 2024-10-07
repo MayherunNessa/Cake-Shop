@@ -12,6 +12,7 @@ The following technologies were used to build the website
     - HTML
     - CSS
     - JavaScript
+    - Bootstrap 5.3
 
 * Softwares
     - VS code
