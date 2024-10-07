@@ -14,50 +14,53 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <h1>Cake Shop</h1>
-        <nav>
-            <ul>
-                <li><a href="">Cakes</a></li>
-                <li><a href="">Cupcakes</a></li>
-                <li><a href="">Breads</a></li>
+    <header class="container-fluid">
+        <h1 class="text-center my-3 py-3">Cake Shop</h1>
+        <nav class="navbar navbar-expand-lg row justify-content-evenly bg-body-secondary ">
+            <ul class="col-8 row navbar-nav justify-content-center ">
+                <li class="col text-center nav-item"><a class="active nav-link" href="">Cakes</a></li>
+                <li class="col text-center nav-item"><a class="nav-link" href="">Cupcakes</a></li>
+                <li class="col text-center nav-item"><a class="nav-link" href="">Breads</a></li>
                 
             </ul>
 
-            <button id="show-hide-cart">Cart</button>
+            <button class="col-1 btn btn-outline-danger" id="show-hide-cart">Cart</button>
         </nav>
     </header>
     
     <!-- Main Body -->
-    <main>
+    <main class="container-fluid row">
         <!-- Product list section -->
-        <div class="product-list">
+         <p class="h2 pt-5 pl-5 text-body-secondary">Products</p>
+        <div class="product-list  col-lg-6 container-fluid align-items-evenly justify-content-evenly">
 
-            <div class="product-card">
-                <h3>Cake Name</h3>
-                <img src="" alt="product-img">
-                <p>price</p>
-                <button id="add-to-cart">Add to cart +</button>
+            <div class="product-card card text-center bs-secondary-bg mx-5 my-5">
+                <h3 class="card-title mt-5"><i class="badge text-bg-warning">Cake Name</i></h3>
+                <img class="card-img img-mid mx-auto" src="img/cake img placeholder.jpg" alt="product-img">
+                <p class="card-body h3">50$</p>
+                <button id="add-to-cart" class="card-btn btn btn-danger">Add to cart +</button>
             </div>
             
         </div>
 
         <!-- Cart Section -->
-        <div class="cart">
+        <div class="cart  col-lg-5">
             <!-- Cart items section -->
             <div class="cart-items">
 
-                <div class="item-card">
-                    <img src="" alt="item-img">
-                    <div class="col">
-                        <p>Item name</p>
-                        <p>Unit price</p>
-                        <div class="quantity">
-                            <button>-</button> <p>0</p> <button>+</button>
+                <div class="item-card container-fluid row align-items-center">
+                    <img class="col-auto img item-img img-sm" src="img/cake img placeholder.jpg" alt="cake img">
+                    <div class="col-auto">
+                        <p class="row">Item name</p>
+                        <p class="row">Unit price</p>
+                        <div class="quantity row justify-content-center align-items-center">
+                            <button class="col-1 my-auto mx-auto">-</button> <p class="col-1 my-auto mx-auto">0</p> <button class="col-1 py-auto px-auto text-center">+</button>
                         </div>
                     </div>
 
-                    <div class="col"></div>
+                    <div class="col-3 align-items-center justify-content-center">
+                        <p class="total-price text-danger text-end h2">0$</p>
+                    </div>
                 </div>
 
             </div>
@@ -65,31 +68,33 @@
             <!-- Checkout Section -->
             <div class="chekout">
                 <!-- table structure ver -->
-                 <table>
+                 <table class="table px-lg-5">
                     <!-- Discount Code -->
                     <tr>
-                        <td>
-                            <input type="text">
-                            <button>Submit</button>
+                        <td class="row justify-content-end" colspan="2">
+                            <input class="form-control input col-auto" type="text" placeholder="Discount code">
+                        </td>
+                        <td class="text-end">
+                            <button class="btn btn-secondary col-auto" >Submit</button>
                         </td>
                     </tr>
                     <!-- Prices -->
                     <tr>
-                        <th>Subtotal</th>
-                        <td>112$</td>
+                        <th class="text-body-secondary">Subtotal</th>
+                        <td class="text-end">112$</td>
                     </tr>
                     <tr>
-                        <th>Discount</th>
-                        <td>25$</td>
+                        <th class="text-body-secondary">Discount</th>
+                        <td class="text-end">25$</td>
                     </tr>
                     <tr>
-                        <th>Delivary</th>
-                        <td>30$</td>
+                        <th class="text-body-secondary">Delivary</th>
+                        <td class="text-end">30$</td>
                     </tr>
-                    <thead>
+                    <tr class="table-secondary">
                         <th>Total</th>
-                        <th>167$</th>
-                    </thead>
+                        <th class="text-end">167$</th>
+                    </tr>
                     <!-- Checkout button -->
                     <tr></tr>
                  </table>
@@ -128,16 +133,17 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="logo">
-            <img src="logo.png" alt="Company Logo" />
+    <footer class="container-fluid text-center bg-dark py-3">
+        <div class="logo col">
+            <img class="img-sm circle" src="img/logo.jpg" alt="Company Logo" />
+            <p class="text-light h3">Cake Shop</p>
         </div>
-        <p>&copy; 2024 Cake Shop. All rights reserved.</p>
-        <nav>
-            <ul>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <p class="text-light">&copy; 2024 Cake Shop. All rights reserved.</p>
+        <nav class="col text-light">
+            <ul class="navbar-nav text-light row">
+                <li class="nav-item col"><a class="nav-link" href="#faq">FAQ</a></li>
+                <li class="nav-item col"><a  class="nav-link" href="#careers">Careers</a></li>
+                <li class="nav-item col"><a  class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </footer>
@@ -152,6 +158,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

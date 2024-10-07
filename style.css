@@ -1,0 +1,24 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+.product-card{
+    width: 18rem;
+}
+
+/* image sizes */
+.img-sm{
+    width: 128px;
+    height: 128px;
+}
+
+.img-md{
+    width: 200px;
+    height: 200px;
+}
+
+.circle{
+    border-radius: 100px;
+    border: 2px solid gray;
+}
