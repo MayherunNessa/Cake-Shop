@@ -48,15 +48,17 @@
             <!-- Cart items section -->
             <div class="cart-items">
 
-                <div class="item-card container-fluid row align-items-center">
-                    <img class="col-auto img item-img img-sm" src="img/cake img placeholder.jpg" alt="cake img">
-                    <div class="col-auto">
-                        <p class="row">Item name</p>
-                        <p class="row">Unit price</p>
-                        <input type="number" max="100" min="1" id="quantity" value="1">
+                <div class="item-card container-fluid row align-items-center bg-body-secondary rounded p-3 my-3">
+                    <div class="col col-8 row">
+                        <img class="col-auto img item-img img-sm rounded" src="img/cake img placeholder.jpg" alt="cake img">
+                        <div class="col">
+                            <p class="row">Item name</p>
+                            <p class="row">Unit price</p>
+                            <input class="form-control col col-auto" type="number" max="100" min="1" id="quantity" value="1">
+                        </div>
                     </div>
 
-                    <div class="col-3 align-items-center justify-content-center">
+                    <div class="col-4 align-items-center justify-content-center justify-self-end">
                         <p class="total-price text-danger text-end h2">0$</p>
                     </div>
                 </div>
