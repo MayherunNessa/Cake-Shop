@@ -69,12 +69,15 @@
                  <table class="table px-lg-5">
                     <!-- Discount Code -->
                     <tr>
-                        <td class="row justify-content-end" colspan="2">
-                            <input class="form-control input col-auto" type="text" placeholder="Discount code">
-                        </td>
-                        <td class="text-end">
-                            <button class="btn btn-secondary col-auto" >Submit</button>
-                        </td>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                              </div>
+                            <input type="text" class="form-control" aria-label="Discount" placeholder="Discount code">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-primary">Apply</button>
+                            </div>
+                        </div>                          
                     </tr>
                     <!-- Prices -->
                     <tr>
@@ -94,7 +97,12 @@
                         <th class="text-end">167$</th>
                     </tr>
                     <!-- Checkout button -->
-                    <tr></tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-outline-danger container-fluid">Buy</button>
+                        </td>
+                        
+                    </tr>
                  </table>
                 <!-- <div class="row">
                     <input id="promo-code" type="text" placeholder="Discount code">
