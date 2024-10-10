@@ -4,8 +4,20 @@
 }
 
 .product-card{
-    width: 18rem;
+    min-width:10rem;
+    height: 10rem;
 }
+
+.item-card{
+    min-width: 20rem;
+}
+
+.flex-row-col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 /* image sizes */
 .img-sm{
@@ -14,8 +26,8 @@
 }
 
 .img-md{
-    width: 200px;
-    height: 200px;
+    width: 128px;
+    height: 128px;
 }
 
 .circle{
